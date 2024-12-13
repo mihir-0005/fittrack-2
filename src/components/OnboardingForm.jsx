@@ -20,7 +20,7 @@ export default function OnboardingForm() {
     };
 
     try {
-      await axios.post('http://localhost:3000/api/users/onboarding', userData);
+      await axios.post('https://fittrack-2-qv8i.onrender.com/api/users/onboarding', userData);
       navigate('/home');
     } catch (error) {
       console.error('Error saving user data:', error);
